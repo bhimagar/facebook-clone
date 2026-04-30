@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .navbar {
@@ -68,6 +69,10 @@
     gap: 30px;
 }
 
+.nav-right p {
+    font-weight: 500;
+}
+
 .profile {
     display: flex;
     align-items: center;
@@ -102,9 +107,13 @@
     text-decoration: none;
 }
 
+.content {
+    display: flex;
+}
+
 .sidebar {
     height: 100%;
-    width: 450px;
+    width: 425px;
     display: flex;
     flex-direction: column;
     background-color: #F3F4F6;
@@ -112,17 +121,119 @@
 
 .side-top {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
 .prof {
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 5px; */
+}
+
+.prof a {
     display: flex;
     align-items: center;
+    color: black;
+    text-decoration: none;
     gap: 5px;
+    font-size: 17px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
 }
 
 .prof img {
-    height: 40px;
+    height: 50px;
     width: auto;
+}
 
+.side-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list {
+    align-items: center;
+    padding: 5px;
+}
+
+.list i {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.list a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.list-btn {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E5E6EA;
+    font-size: 15px;
+    /* font-family: "Segoe UI", Arial, sans-serif; */
+    font-weight: 500;
+}
+
+.list-down {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.list2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* font-family: "Segoe UI", Arial, sans-serif; */
+    font-weight: 500;
+}
+
+.list2 img {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.content-mid
+
+.story {
+    display: flex;
+    gap: 10px;
+    /* padding: 20px; */
+    /* flex-direction: column; */
+    /* background-color: #F3F4F6; */
+}
+
+.box1 {
+    border: 1px solid black;
+    height: 200px;
+    width: 125px;
+    background-image: url(/Assets/profile\ photo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.box1 i {
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: black;  
+}
+
+.story-profile i {
+    /* height: 200px; */
 }
