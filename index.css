@@ -59,7 +59,7 @@
 .icon {
     font-size: 25px;
     display: flex;
-    gap: 80px;
+    gap: 100px;
 }
 
 .nav-right {
@@ -86,7 +86,7 @@
 .setting {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .setting a {
@@ -100,5 +100,29 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6;
+}
+
+.side-top {
+    padding: 20px;
+
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.prof img {
+    height: 40px;
+    width: auto;
 
 }
