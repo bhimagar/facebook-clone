@@ -249,7 +249,7 @@ body {
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/images/josephine\ williams\ pfp.png);
+    background-image: url(/assets/images/josephine\ williams\ pfp.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -266,7 +266,7 @@ body {
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    background-image: url(/Assets/images/profile\ photo.png);
+    background-image: url(/assets/images/profile\ photo.png);
     backdrop-filter: blur(10px);
 }
 
@@ -278,7 +278,7 @@ body {
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/images/tom\ russo\ story.png);
+    background-image: url(/assets/images/tom\ russo\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -305,7 +305,7 @@ body {
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/images/betty\ chen\ story.png);
+    background-image: url(/assets/images/betty\ chen\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -332,7 +332,7 @@ body {
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/images/dennis\ han\ story.png);
+    background-image: url(/assets/images/dennis\ han\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -359,7 +359,7 @@ body {
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/images/cynthia\ lopez\ story.png);
+    background-image: url(/assets/images/cynthia\ lopez\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
