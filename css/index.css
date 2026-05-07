@@ -5,6 +5,10 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+body {
+    padding-top: 60px;
+}
+
 .navbar {
     /* border: 1px solid black; */
     height: 60px;
@@ -14,6 +18,11 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 10px #E3E3EB;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    /* top: 0; */
 }
 
 .nav-left {
@@ -112,15 +121,19 @@
 }
 
 .content {
+    /* margin-left: 425px; */
     display: flex;
 }
 
 .sidebar {
-    height: auto;
+    height: 100%;
     width: 425px;
     display: flex;
     flex-direction: column;
     background-color: #F3F4F6;
+    position: fixed;
+    left: 0;
+    /* z-index: 1000; */
 }
 
 .side-top {
@@ -218,6 +231,7 @@
 }
 
 .content-mid {
+    margin-left: 425px;
     padding: 20px 20px 0 20px;
     background-color: #F1F2F6;
 }
@@ -235,7 +249,7 @@
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/josephine\ williams\ pfp.png);
+    background-image: url(/Assets/images/josephine\ williams\ pfp.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -252,7 +266,7 @@
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    background-image: url(/Assets/profile\ photo.png);
+    background-image: url(/Assets/images/profile\ photo.png);
     backdrop-filter: blur(10px);
 }
 
@@ -264,7 +278,7 @@
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/tom\ russo\ story.png);
+    background-image: url(/Assets/images/tom\ russo\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -291,7 +305,7 @@
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/betty\ chen\ story.png);
+    background-image: url(/Assets/images/betty\ chen\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -318,7 +332,7 @@
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/dennis\ han\ story.png);
+    background-image: url(/Assets/images/dennis\ han\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -345,7 +359,7 @@
     /* border: 1px solid black; */
     height: 200px;
     width: 125px;
-    background-image: url(/Assets/cynthia\ lopez\ story.png);
+    background-image: url(/Assets/images/cynthia\ lopez\ story.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -370,6 +384,7 @@
 
 .story-btn {
     position: absolute;
+    z-index: 900;
     right: -20px;
     top: 50%;
     transform: translateY(-50%);
@@ -447,6 +462,8 @@
     /* padding: 20px 0; */
     /* border: 1px solid black; */
     background-color: white;
+    /* height: 2000px; */
+    border-radius: 10px;
 }
 
 .post p {
@@ -467,6 +484,7 @@
 .post-name {
     display: flex;
     flex-direction: column;
+    margin-left: -10px;
 }
 
 .post-name .p1 {
@@ -490,12 +508,116 @@
     height: 320px;
 }
 
+.likes {
+    display: flex;
+    flex-direction: column;
+}
+
+.like-count {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    /* align-items: center; */
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    /* gap: 2px; */
+}
+
+.comment a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.like a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    /* gap: 0px; */
+}
+
+.like i {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #059CFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.like p {
+    font-size: 15px;
+    margin: -5px;
+}
+
+.like-bt {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    font-size: 20px;
+    align-content: space-between;
+    gap: 10px;
+}
+
+.like-bt button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 30px;
+    border: none;
+    background-color: white;
+}
+
+.like-bt button:hover {
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.thumb {
+    display: flex;
+    align-items: center;
+}
+
+.thumb i, .comm i, .share i {
+    font-size: 18px;
+}
+
+.thumb p, .comm p, .share p {
+    font-size: 15px;
+    color: RGB(127, 132, 139);
+    margin-left: -5px;
+}
+
+.comm {
+    display: flex;
+}
+
+.share {
+    display: flex;
+}
+
 .rightbar {
     width: 400px;
-    height: auto;
+    height: 100%;
     padding: 20px 50px 0px 20px;
     background-color: #F1F2F6;
     display: flex;
+    position: fixed;
+    right: 0;
     /* gap: 10px; */
 }
 
